@@ -3,16 +3,16 @@ import { Target, Eye, ShieldCheck } from 'lucide-react';
 export default function AboutSection() {
     const team = [
         {
-            name: 'Alejandro Vargas',
-            role: 'Co-Founder & Lead Architect',
+            name: 'Gabriel Peredo',
+            role: 'Founder & Software Architect',
             bio: 'Ex-Angular Senior, ahora evangelista de Next.js y NestJS. Apasionado por la arquitectura de software escalable.',
-            image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=400&h=400',
+            image: '/images/gabriel-peredo.png',
             linkedin: '#',
             github: '#',
         },
         {
             name: 'Paola Quiroga',
-            role: 'Co-Founder & Product Strategy',
+            role: 'Product Strategy',
             bio: 'Especialista en gestión de proyectos sociales con +10 años de experiencia en ONGs internacionales.',
             image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=400&h=400',
             linkedin: '#',
@@ -20,7 +20,7 @@ export default function AboutSection() {
         },
         {
             name: 'Ignacio Roca',
-            role: 'Backend Developer (NestJS)',
+            role: 'Sales Executive',
             bio: 'Ninja de las bases de datos y la seguridad. Encargado de que la API de Aidglobe sea rápida y segura.',
             image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=400&h=400',
             linkedin: '#',
