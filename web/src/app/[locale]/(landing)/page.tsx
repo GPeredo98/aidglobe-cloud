@@ -22,10 +22,9 @@ export default function LandingPage() {
   };
 
   const partners = [
-    'Rotary', 'Aiesec', 'UPSA', 'Unicef', 'Cainco',
-    'Fundación Vida', 'Banco de Alimentos', 'Cruz Roja',
-    'Fundación Techo', 'Fundación Tierra', 'Fundación Agua',
-    'Fundación Sol', 'Fundación Aire'
+    '/images/partners/rotaract.png', '/images/partners/aiesec.png', '/images/partners/upsa.png',
+    '/images/partners/cainco.png', '/images/partners/techo.png', '/images/partners/fundacion-vida.png',
+    '/images/partners/unicef.png'
   ];
 
   return (
@@ -127,10 +126,10 @@ export default function LandingPage() {
         </div>
 
         {/* Contenedor infinito de Patrocinadores */}
-        <InfiniteCarousel speed={1.2}>
+        <InfiniteCarousel speed={0.5}>
           {partners.map((partner) => (
-            <div key={partner} className="min-w-[150px] ...">
-              {partner}
+            <div key={partner} className="min-w-[150px] mx-4 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
+              <img src={partner} />
             </div>
           ))}
         </InfiniteCarousel>
