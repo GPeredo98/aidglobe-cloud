@@ -5,7 +5,6 @@ export default function ContactPage() {
     <div className="min-h-screen bg-white pt-32 pb-20">
       <div className="container px-6 mx-auto">
         
-        {/* Cabecera */}
         <div className="max-w-2xl mb-16">
           <h1 className="text-4xl md:text-5xl font-extrabold text-gray-900 mb-6">
             Estamos aquí para <span className="text-teal-500">ayudarte</span>
@@ -17,7 +16,6 @@ export default function ContactPage() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
           
-          {/* COLUMNA 1: FORMULARIO (8 columnas en desktop) */}
           <div className="lg:col-span-7">
             <form className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -65,10 +63,8 @@ export default function ContactPage() {
             </form>
           </div>
 
-          {/* COLUMNA 2: INFO DE CONTACTO (5 columnas en desktop) */}
           <div className="lg:col-span-5 space-y-8">
             
-            {/* Tarjeta de Métodos de Contacto */}
             <div className="bg-teal-600 rounded-[2.5rem] p-10 text-white relative overflow-hidden">
               <h3 className="text-2xl font-bold mb-8 relative z-10">Información de contacto</h3>
               
@@ -104,11 +100,9 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              {/* Decoración circular de fondo */}
               <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
             </div>
 
-            {/* Chat de Soporte Rápido */}
             <div className="p-8 border border-gray-100 rounded-[2.5rem] bg-gray-50 flex items-start gap-4">
               <div className="w-12 h-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-teal-600">
                 <MessageSquare size={20} />

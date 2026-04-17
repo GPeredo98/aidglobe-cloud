@@ -107,7 +107,6 @@ export default function WallSection() {
       <div className="space-y-6">
         {posts.map((post) => (
           <div key={post.id} className="bg-white rounded-2xl border border-gray-200 shadow-sm overflow-hidden group">
-            {/* Header del Post */}
             <div className="p-5 border-b border-gray-50 flex justify-between items-start">
               <div className="flex items-center gap-3">
                 <div className="w-10 h-10 bg-gray-900 rounded-xl flex items-center justify-center text-white font-bold text-xs uppercase italic">
@@ -121,11 +120,9 @@ export default function WallSection() {
               <CheckCircle2 size={18} className="text-emerald-500" />
             </div>
 
-            {/* Contenido */}
             <div className="p-5">
               <p className="text-sm text-gray-600 leading-relaxed mb-4">{post.content}</p>
               
-              {/* Badges otorgadas en este post */}
               {post.badges.length > 0 && (
                 <div className="flex flex-wrap gap-2 mb-4">
                   {post.badges.map((badge, idx) => (
@@ -136,7 +133,6 @@ export default function WallSection() {
                 </div>
               )}
 
-              {/* Fotos del Usuario */}
               {post.photos.length > 0 ? (
                 <div className={`grid gap-2 mb-4 ${post.photos.length > 1 ? 'grid-cols-2' : 'grid-cols-1'}`}>
                   {post.photos.map((photo, idx) => (
@@ -150,7 +146,6 @@ export default function WallSection() {
                 </div>
               )}
 
-              {/* Reseña de la organización */}
               {post.review && (
                 <div className="bg-gray-50 p-4 rounded-xl relative mb-4">
                   <Quote size={16} className="text-gray-200 absolute top-2 right-2" />
@@ -159,7 +154,6 @@ export default function WallSection() {
                 </div>
               )}
 
-              {/* Footer del Post */}
               <div className="flex items-center justify-between pt-4 border-t border-gray-50">
                 <div className="flex items-center gap-1 text-emerald-600">
                   <Star size={14} fill="currentColor" />

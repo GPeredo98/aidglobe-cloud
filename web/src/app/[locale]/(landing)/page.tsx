@@ -30,7 +30,6 @@ export default function LandingPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white overflow-x-hidden">
 
-      {/* 0. SECCIÓN: PRESENTACION DE LA MARCA Y SLOGAN */}
       <section className="pt-32 pb-16">
         <div className="container px-6 mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1 text-center">
@@ -47,7 +46,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 1. SECCIÓN: PROYECTOS RECIENTES (CARRUSEL INFINITO) */}
       <section className="pb-16">
         <InfiniteCarousel speed={0.5}>
           {recentProjects.map((project, index) => {
@@ -92,7 +90,6 @@ export default function LandingPage() {
 
       </section>
 
-      {/* 2. SECCIÓN: SOBRE AIDGLOBE */}
       <section className="py-24 bg-gradient-to-b from-white to-gray-50">
         <div className="container px-6 mx-auto flex flex-col md:flex-row items-center gap-12">
           <div className="flex-1">
@@ -117,7 +114,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* 3. SECCIÓN: PATROCINADORES (CARRUSEL INFINITO) */}
       <section className="py-16 border-t border-gray-100 bg-white overflow-hidden">
         <div className="container px-6 mx-auto mb-10 text-center">
           <p className="text-sm font-semibold text-gray-400 uppercase tracking-widest">
@@ -125,7 +121,6 @@ export default function LandingPage() {
           </p>
         </div>
 
-        {/* Contenedor infinito de Patrocinadores */}
         <InfiniteCarousel speed={0.5}>
           {partners.map((partner) => (
             <div key={partner} className="min-w-[150px] mx-4 flex items-center justify-center opacity-80 hover:opacity-100 transition-opacity">
@@ -135,7 +130,6 @@ export default function LandingPage() {
         </InfiniteCarousel>
       </section>
 
-      {/* Footer Simple */}
       <footer className="py-12 bg-white text-center border-t border-gray-50">
         <p className="text-gray-400 text-sm">© 2026 Aidglobe. Hecho con ❤️ para el mundo.</p>
       </footer>

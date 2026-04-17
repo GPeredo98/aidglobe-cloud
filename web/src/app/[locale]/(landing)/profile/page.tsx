@@ -6,9 +6,7 @@ export default function PublicProfile() {
     <div className="min-h-screen bg-[#F8FAFC] pt-20 pb-12">
       <div className="max-w-5xl mx-auto px-6">
         
-        {/* HEADER DEL PERFIL */}
         <div className="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm mb-6 flex flex-col md:flex-row gap-8 items-center md:items-start">
-          {/* Avatar con Nivel */}
           <div className="relative">
             <div className="w-32 h-32 rounded-3xl bg-gradient-to-br from-teal-400 to-emerald-500 p-1">
               <img 
@@ -22,7 +20,6 @@ export default function PublicProfile() {
             </div>
           </div>
 
-          {/* Info Principal */}
           <div className="flex-1 text-center md:text-left">
             <div className="flex flex-col md:flex-row md:items-center gap-3 mb-2">
               <h1 className="text-2xl font-black text-gray-900 tracking-tight">Alejandro Vargas</h1>
@@ -39,7 +36,6 @@ export default function PublicProfile() {
             </div>
           </div>
 
-          {/* Acción Social */}
           <div className="flex gap-2">
             <button className="p-2.5 bg-gray-50 text-gray-500 rounded-xl hover:bg-gray-100 transition-all border border-gray-100">
               <Share2 size={18} />
@@ -52,9 +48,7 @@ export default function PublicProfile() {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           
-          {/* COLUMNA IZQUIERDA: STATS Y LOGROS */}
           <div className="lg:col-span-4 space-y-6">
-            {/* Altruismo Stats */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
               <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-6">Métricas de Altruismo</h3>
               <div className="space-y-4">
@@ -82,14 +76,12 @@ export default function PublicProfile() {
               </div>
             </div>
 
-            {/* Medallas (Badges) */}
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">
               <h3 className="text-xs font-black text-gray-400 uppercase tracking-widest mb-4">Medallas Obtenidas</h3>
               <div className="flex flex-wrap gap-3">
                 {[1, 2, 3, 4].map((i) => (
                   <div key={i} className="w-12 h-12 bg-amber-50 rounded-full flex items-center justify-center text-amber-500 border border-amber-100 shadow-inner group relative cursor-help">
                     <Award size={24} />
-                    {/* Tooltip simple */}
                     <span className="absolute -top-8 left-1/2 -translate-x-1/2 bg-gray-900 text-white text-[10px] px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">Fundador</span>
                   </div>
                 ))}
@@ -97,7 +89,6 @@ export default function PublicProfile() {
             </div>
           </div>
 
-          {/* COLUMNA DERECHA: HISTORIAL DE EVENTOS (Tipo GitHub Contributions) */}
           <div className="lg:col-span-8">
             <div className="bg-white rounded-2xl border border-gray-200 p-6 shadow-sm">           
               <WallSection />

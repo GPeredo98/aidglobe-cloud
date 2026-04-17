@@ -20,7 +20,6 @@ export default function HomePage() {
   return (
     <div className="max-w-[1400px] mx-auto space-y-6">
       
-      {/* Header Compacto */}
       <div className="flex items-center justify-between border-b border-gray-200 pb-4">
         <div>
           <h1 className="text-xl font-bold text-gray-900">Resumen Operativo</h1>
@@ -32,7 +31,6 @@ export default function HomePage() {
         </button>
       </div>
 
-      {/* Grid de Stats (4 columnas, más densas) */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         {stats.map((stat, i) => (
           <div key={i} className="bg-white p-4 rounded-xl border border-gray-200 shadow-sm">
@@ -51,10 +49,8 @@ export default function HomePage() {
         ))}
       </div>
 
-      {/* Contenido Principal: Tabla y Actividad */}
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         
-        {/* Tabla de Proyectos (Ocupa 2/3) */}
         <div className="lg:col-span-2 bg-white rounded-xl border border-gray-200 shadow-sm overflow-hidden">
           <div className="px-5 py-4 border-b border-gray-100 flex justify-between items-center">
             <h3 className="font-bold text-gray-900 text-sm">Proyectos en curso</h3>
@@ -98,7 +94,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Feed de Actividad (Ocupa 1/3) */}
         <div className="bg-white rounded-xl border border-gray-200 shadow-sm p-5">
           <h3 className="font-bold text-gray-900 text-sm mb-5">Actividad reciente</h3>
           <div className="space-y-6">

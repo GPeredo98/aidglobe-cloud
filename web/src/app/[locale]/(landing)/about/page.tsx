@@ -38,10 +38,8 @@ export default function AboutSection() {
         <section className="py-24 bg-white overflow-hidden">
             <div className="container px-6 mx-auto relative">
                 
-                {/* --- SECCIÓN 1: CABECERA Y PILARES (GRIS SUBTÁN) --- */}
                 <div className="bg-gray-50 rounded-3xl p-10 md:p-16 mb-20 border border-gray-100">
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                        {/* Texto de Cabecera */}
                         <div className="lg:col-span-5">
                             <h2 className="text-sm font-bold text-teal-600 uppercase tracking-widest mb-3">Sobre nosotros</h2>
                             <h3 className="text-4xl font-extrabold text-gray-900 leading-tight">
@@ -53,7 +51,6 @@ export default function AboutSection() {
                             </p>
                         </div>
 
-                        {/* Misión, Visión, Valores (3 Columnas Internas) */}
                         <div className="lg:col-span-7 grid grid-cols-1 md:grid-cols-3 gap-8">
                             {pillars.map((item, i) => (
                                 <div key={i} className="bg-white p-6 rounded-2xl border border-gray-100 shadow-sm group hover:border-teal-100 transition-all">
@@ -69,9 +66,7 @@ export default function AboutSection() {
                 </div>
 
 
-                {/* --- SECCIÓN 2: EL EQUIPO (FONDO BLANCO, CENTRADO) --- */}
                 <div className="max-w-6xl mx-auto">
-                    {/* Cabecera Equipo Centrada */}
                     <div className="max-w-2xl mx-auto text-center mb-16">
                         <div className="inline-block bg-teal-50 text-teal-700 px-4 py-1 rounded-full text-xs font-bold uppercase tracking-wider mb-4">
                             People First
@@ -81,11 +76,9 @@ export default function AboutSection() {
                         </h3>
                     </div>
 
-                    {/* Grid de Equipo - Ajustado a 3 Columnas para Simetría */}
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {team.map((member, i) => (
                             <div key={i} className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm flex flex-col items-center text-center group hover:border-teal-100 hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1">
-                                {/* Foto Circular con Efecto */}
                                 <div className="relative mb-6">
                                     <div className="absolute inset-0 bg-teal-500 rounded-full blur-lg opacity-0 group-hover:opacity-20 transition-opacity"></div>
                                     <div className="w-28 h-28 rounded-full overflow-hidden border-4 border-white ring-2 ring-gray-100 group-hover:ring-teal-100 transition-all relative z-10">
@@ -97,14 +90,12 @@ export default function AboutSection() {
                                     </div>
                                 </div>
 
-                                {/* Info */}
                                 <h4 className="text-xl font-bold text-gray-900">{member.name}</h4>
                                 <p className="text-xs text-teal-600 font-semibold uppercase tracking-wider mb-4 border-b border-teal-100 pb-1">{member.role}</p>
                                 <p className="text-sm text-gray-500 leading-relaxed mb-8 flex-grow">
                                     &quot;{member.bio}&quot;
                                 </p>
 
-                                {/* Redes Sociales Estilizadas */}
                                 <div className="flex gap-4 justify-center">
                                     {member.linkedin && (
                                         <a href={member.linkedin} target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-gray-50 flex items-center justify-center text-gray-400 hover:bg-[#0077b5]/10 hover:text-[#0077b5] transition-all">
@@ -122,7 +113,6 @@ export default function AboutSection() {
                     </div>
                 </div>
 
-                {/* Decoración de fondo sutil */}
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-teal-50/50 rounded-full blur-3xl -z-10"></div>
             </div>
         </section>

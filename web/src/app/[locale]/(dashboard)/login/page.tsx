@@ -18,11 +18,9 @@ export default function LoginPage() {
   return (
     <div className="min-h-screen flex bg-white">
       
-      {/* --- LADO IZQUIERDO: FORMULARIO --- */}
       <div className="flex-1 flex flex-col justify-center px-8 sm:px-12 lg:px-24 xl:px-32">
         <div className="max-w-md w-full mx-auto">
           
-          {/* Logo y Cabecera */}
           <div className="mb-10">
             <Link href="/" className="inline-block mb-8">
               <span className="text-2xl font-black tracking-tighter text-gray-900">
@@ -33,7 +31,6 @@ export default function LoginPage() {
             <p className="text-gray-500 mt-2">Ingresa tus credenciales para gestionar tu impacto.</p>
           </div>
 
-          {/* Formulario */}
           <form onSubmit={handleLogin} className="space-y-5">
             <div>
               <label className="block text-sm font-bold text-gray-700 mb-2">Correo electrónico</label>
@@ -84,9 +81,7 @@ export default function LoginPage() {
         </div>
       </div>
 
-      {/* --- LADO DERECHO: VISUAL (Oculto en móvil) --- */}
       <div className="hidden lg:flex lg:flex-1 relative bg-gray-900 overflow-hidden">
-        {/* Imagen de fondo con Overlay */}
         <img 
           src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&q=80&w=1200" 
           alt="Voluntariado" 
@@ -94,7 +89,6 @@ export default function LoginPage() {
         />
         <div className="absolute inset-0 bg-gradient-to-t from-teal-900/80 to-transparent"></div>
         
-        {/* Contenido flotante */}
         <div className="relative z-10 self-end p-20 text-white">
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-3xl border border-white/20 max-w-lg">
             <h2 className="text-3xl font-bold mb-4 leading-tight">
@@ -107,7 +101,6 @@ export default function LoginPage() {
           </div>
         </div>
 
-        {/* Decoración: Círculos */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-teal-500/20 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
       </div>
     </div>

@@ -16,7 +16,6 @@ export default function ImpactPage() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       
-      {/* 1. HERO DE IMPACTO: Directo al grano */}
       <section className="pt-32 pb-20 bg-gradient-to-b from-teal-50/50 to-white">
         <div className="container px-6 mx-auto text-center">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-100 text-teal-700 text-xs font-bold uppercase tracking-widest mb-6">
@@ -35,7 +34,6 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      {/* 2. GRID DE ESTADÍSTICAS: Visualización rápida */}
       <section className="py-12 -mt-16">
         <div className="container px-6 mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
@@ -52,7 +50,6 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      {/* 3. SECCIÓN: TRANSPARENCIA (Texto e Imagen) */}
       <section className="py-24">
         <div className="container px-6 mx-auto flex flex-col md:flex-row items-center gap-16">
           <div className="flex-1">
@@ -85,7 +82,6 @@ export default function ImpactPage() {
                     className="w-full h-full object-cover"
                 />
             </div>
-            {/* Decoración flotante */}
             <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-gray-50 hidden md:block">
                 <p className="text-xs font-bold text-gray-400 uppercase tracking-tighter">Última actualización</p>
                 <p className="text-sm font-bold text-emerald-600 italic">Hace 5 minutos</p>
@@ -94,7 +90,6 @@ export default function ImpactPage() {
         </div>
       </section>
 
-	  {/* 4. SECCIÓN: TESTIMONIOS (Historias de Impacto) */}
       <section className="py-24 bg-gray-50/50">
         <div className="container px-6 mx-auto">
           <div className="text-center mb-16">
@@ -131,7 +126,6 @@ export default function ImpactPage() {
                 key={i} 
                 className="bg-white p-8 rounded-3xl border border-gray-100 shadow-sm relative flex flex-col justify-between hover:-translate-y-2 transition-transform duration-300"
               >
-                {/* Icono de comillas decorativo */}
                 <div className="absolute top-6 right-8 text-teal-100 italic font-serif text-6xl select-none">
                   “
                 </div>
@@ -159,7 +153,6 @@ export default function ImpactPage() {
         </div>
       </section>
 
-      {/* 4. CTA FINAL */}
       <section className="py-20 bg-gray-900 mx-6 rounded-[3rem] mb-20 text-center overflow-hidden relative">
         <div className="relative z-10">
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">¿Listo para ser parte del cambio?</h2>
@@ -175,7 +168,6 @@ export default function ImpactPage() {
                 </Link>
             </div>
         </div>
-        {/* Círculos decorativos de fondo */}
         <div className="absolute top-0 right-0 w-64 h-64 bg-teal-500/10 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-64 h-64 bg-emerald-500/10 rounded-full translate-y-1/2 -translate-x-1/2 blur-3xl"></div>
       </section>

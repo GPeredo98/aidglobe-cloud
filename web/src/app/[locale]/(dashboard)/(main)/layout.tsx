@@ -22,9 +22,8 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
   ];
 
   return (
-    <div className="flex h-screen bg-[#F8FAFC]"> {/* Un gris más sutil para que el blanco resalte */}
+    <div className="flex h-screen bg-[#F8FAFC]">
       
-      {/* SIDEBAR */}
       <aside className="w-72 bg-white border-r border-gray-100 hidden md:flex flex-col">
         <div className="p-8">
           <Link href="/home" className="flex items-center gap-2">
@@ -57,7 +56,6 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
         </div>
       </aside>
 
-      {/* MAIN CONTENT */}
       <main className="flex-1 flex flex-col overflow-hidden">
         <header className="h-20 bg-white border-b border-gray-50 flex items-center justify-between px-10">
           <div className="relative w-96 hidden lg:block">
