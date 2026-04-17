@@ -79,7 +79,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-teal-100 text-xs font-bold uppercase">Email</p>
-                    <p className="font-medium text-lg">hello@aidglobe.org</p>
+                    <p className="font-medium text-lg">aidglobe@aol.com</p>
                   </div>
                 </div>
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-teal-100 text-xs font-bold uppercase">Teléfono</p>
-                    <p className="font-medium text-lg">+591 700 000 00</p>
+                    <p className="font-medium text-lg">+591 694-33-575</p>
                   </div>
                 </div>
 

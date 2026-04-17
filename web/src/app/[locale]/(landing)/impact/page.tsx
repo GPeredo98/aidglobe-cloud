@@ -9,7 +9,7 @@ export default function ImpactPage() {
   const stats = [
     { id: 1, label: 'Personas Ayudadas', value: '+50k', icon: Users, color: 'text-teal-600' },
     { id: 2, label: 'Proyectos Activos', value: '124', icon: CheckCircle2, color: 'text-emerald-600' },
-    { id: 3, label: 'Países Alcanzados', value: '12', icon: Globe, color: 'text-blue-600' },
+    { id: 3, label: 'Países Alcanzados', value: '3', icon: Globe, color: 'text-blue-600' },
     { id: 4, label: 'Donaciones Gestionadas', value: '$2.4M', icon: TrendingUp, color: 'text-purple-600' },
   ];
 

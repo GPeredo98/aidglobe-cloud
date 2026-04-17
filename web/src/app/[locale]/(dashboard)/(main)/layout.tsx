@@ -10,6 +10,7 @@ import {
   Bell,
   Search
 } from 'lucide-react';
+import Image from 'next/image';
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   const menuItems = [
@@ -27,10 +28,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <aside className="w-72 bg-white border-r border-gray-100 hidden md:flex flex-col">
         <div className="p-8">
           <Link href="/home" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-teal-500 rounded-lg flex items-center justify-center text-white font-black">A</div>
-            <span className="text-xl font-black tracking-tighter text-gray-900">
-              AID<span className="text-teal-500">GLOBE</span>
-            </span>
+            <Image src="/images/logos/aidglobe-logo.png" alt="AIDGLOBE" width={152} height={32} className="inline-block" />
           </Link>
         </div>
 
