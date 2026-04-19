@@ -3,6 +3,7 @@
 import { Link } from '@/i18n/routing';
 import { Mail, Lock, ArrowRight } from 'lucide-react';
 import { useTranslations } from 'next-intl';
+import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
 export default function LoginPage() {
@@ -22,11 +23,6 @@ export default function LoginPage() {
         <div className="max-w-md w-full mx-auto">
           
           <div className="mb-10">
-            <Link href="/" className="inline-block mb-8">
-              <span className="text-2xl font-black tracking-tighter text-gray-900">
-                AID<span className="text-teal-500">GLOBE</span>
-              </span>
-            </Link>
             <h1 className="text-3xl font-extrabold text-gray-900">Bienvenido de nuevo</h1>
             <p className="text-gray-500 mt-2">Ingresa tus credenciales para gestionar tu impacto.</p>
           </div>
