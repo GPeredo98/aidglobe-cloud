@@ -27,13 +27,13 @@ export default async function RootLayout({
   params
 }: Readonly<{
   children: React.ReactNode;
-  params: Promise<{ locale: string }>;
+  params: Promise<{ locale?: string }>;
 }>) {
   const { locale } = await params;
   const messages = await getMessages();
   return (
     <html
-      lang={locale}
+      lang={locale || 'es'}
       className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
     >
       <body className="min-h-full flex flex-col">
