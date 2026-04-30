@@ -24,7 +24,7 @@ export default function LandingPage() {
   const partners = [
     '/images/partners/rotaract.png', '/images/partners/aiesec.png', '/images/partners/upsa.png',
     '/images/partners/cainco.png', '/images/partners/techo.png', '/images/partners/fundacion-vida.png',
-    '/images/partners/unicef.png'
+    '/images/partners/unicef.png', '/images/partners/scz.png', '/images/partners/unirse.png',
   ];
 
   return (
